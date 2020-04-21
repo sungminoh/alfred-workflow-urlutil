@@ -18,6 +18,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0D6C7E1A-7E8E-4859-8045-F9CCC0C7E04E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -45,7 +55,7 @@
 			<key>uid</key>
 			<string>AB27A42A-8566-40F2-9DCF-F096C8B27E15</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -54,10 +64,12 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -85,12 +97,36 @@
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>6F68F90B-EA3B-494E-8242-62796BD652E5</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query="${1}"
+[[ "${query}" = monolith* ]] &amp;&amp; sh -c "/usr/local/bin/${query}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0D6C7E1A-7E8E-4859-8045-F9CCC0C7E04E</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -99,6 +135,13 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0D6C7E1A-7E8E-4859-8045-F9CCC0C7E04E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
 		<key>6F68F90B-EA3B-494E-8242-62796BD652E5</key>
 		<dict>
 			<key>xpos</key>
